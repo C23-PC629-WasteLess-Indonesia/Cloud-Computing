@@ -604,7 +604,7 @@ app.get("/preferancefoodList", authenticateToken, async (req, res) => {
 
     // API call ke API ML
     request.post(
-      "https://wasteless-ml-api-v1-ywnxbyxnda-et.a.run.app/",
+      "https://wasteless-ml-api-v1-1-6e4zohwlaq-et.a.run.app/",
       { json: parameterML },
       function (error, response, body) {
         if (!error && response.statusCode == 200) {
