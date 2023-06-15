@@ -175,8 +175,8 @@ Food.belongsTo(User, { foreignKey: "userId" }); // Food memiliki relasi belongsT
 User.hasMany(Food, { foreignKey: "userId" }); // User memiliki relasi hasMany dengan Food
 
 // Middleware
-app.use(bodyParser.urlencoded({ extended: false, limit: '10mb' }));
-app.use(bodyParser.json({limit: '10mb'}));
+app.use(bodyParser.urlencoded({ extended: false, limit: '50mb' }));
+app.use(bodyParser.json({limit: '50mb'}));
 app.use(flash());
 
 // Configure multer storage and file filter
